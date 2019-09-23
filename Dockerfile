@@ -35,8 +35,7 @@ COPY configs/.bashrc /root/.bashrc
 COPY configs/.bashrc /home/docker/.bashrc
 
 #Install NodeJS
-RUN apt install nodejs
-RUN apt install npm
+RUN apt install -y nodejs npm
 
 #open ports
 EXPOSE 80 22
