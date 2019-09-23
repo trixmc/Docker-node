@@ -1,9 +1,9 @@
 # Create container
 ```
-docker run -it -d --name=laravel -h=laravel -p 1080:80 -p 1022:22 trixmc/docker-node /bin/bash
+docker run -it -d --name=node -h=node -p 1080:80 -p 1022:22 trixmc/docker-node /bin/bash
 ```
 ```
-docker run -it -d --name=laravel -h=laravel -v /local/code/dir:/var/www -p 1080:80 -p 1022:22 trixmc/docker-node /bin/bash
+docker run -it -d --name=node -h=node -v /local/code/dir:/var/www -p 1080:80 -p 1022:22 trixmc/docker-node /bin/bash
 ```
 # SSH as docker user in Groups: www-data,sudo
 ```
