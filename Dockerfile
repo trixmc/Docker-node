@@ -34,10 +34,6 @@ COPY configs/bash.bashrc /etc/bash.bashrc
 COPY configs/.bashrc /root/.bashrc
 COPY configs/.bashrc /home/docker/.bashrc
 
-#Install locale
-RUN locale-gen en_US.UTF-8
-RUN dpkg-reconfigure locales
-
 #Install NodeJS
 RUN apt install nodejs
 RUN apt install npm
